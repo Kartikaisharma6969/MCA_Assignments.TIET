@@ -31,5 +31,6 @@ int main(){
      checkallunique(vec,size);
      for(int i : vec){
         cout<<i<<endl;
+        
      }
 }

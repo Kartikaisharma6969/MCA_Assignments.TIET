@@ -17,6 +17,8 @@ void checkallunique(vector<int> & vec,int size){
 
                 // Decrease size
                 size--;
+                int same;
+                
 
                 j--;
              }

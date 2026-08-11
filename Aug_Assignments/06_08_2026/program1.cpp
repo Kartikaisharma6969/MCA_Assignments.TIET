@@ -110,11 +110,12 @@ while(true){
      cout<<"\n";
     int choice;
     cout<<"Enter your choice from one of the following(1-6): "<<endl;
-    cout<<"(1)Display "<<endl;
-    cout<<"(2) Insert"<<endl;
-    cout<<"(3) Delete"<<endl;
-    cout<<"(4)Linear Search"<<endl;
-    cout<<"(5) Exit"<<endl;
+    cout<<"(1)Create "<<endl;
+    cout<<"(2) Display"<<endl;
+    cout<<"(3) Insert"<<endl;
+    cout<<"(4)Delete"<<endl;
+    cout<<"(5) Linear Search"<<endl;
+    cout<<"(6) Exit"<<endl;
 
     cout<<"\n";
     cout<<"Enter here: ";

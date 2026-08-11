@@ -22,7 +22,7 @@ void checkallunique(vector<int> & vec,int size){
              }
     }
     }
-
+    
 }
 int main(){
     

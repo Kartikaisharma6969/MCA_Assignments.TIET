@@ -36,7 +36,8 @@ void printing_sum_rows(int arr[4][3]){
             break;
             
         }
-        cout<<endl;
+        cout<<endl;// simple code repo in the main function//
+        
         
     }   
 

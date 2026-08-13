@@ -52,7 +52,7 @@ void printing_sum_colms(int const arr[4][3]){
 
         cout<<"The sum of column " << j + 1 <<" :" <<sum<<endl;
     }
-
+//heelo//
     
 }
 int main(){

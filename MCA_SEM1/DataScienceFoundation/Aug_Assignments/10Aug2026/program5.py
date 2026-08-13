@@ -1,0 +1,7 @@
+"""
+Q5. Multiplication * Create two variables: a = 20 b = 10
+ Find and print a * b. Expected result: 200 
+"""
+a  = 20
+b = 10
+print("Multiplication:",a*b)

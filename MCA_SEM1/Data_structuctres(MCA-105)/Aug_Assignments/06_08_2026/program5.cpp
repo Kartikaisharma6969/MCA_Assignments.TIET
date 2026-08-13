@@ -37,7 +37,7 @@ void printing_sum_rows(int arr[4][3]){
             
         }
         cout<<endl;// simple code repo in the main function//
-        
+
         
     }   
 
@@ -67,6 +67,7 @@ int main(){
     cout<<"And now printing the sum of cols: "<<endl;
     printing_sum_colms(arr);
     // cout<<arr[0][0] + arr[1][0] + arr[2][0] + arr[3][0];
+    
 
 
 

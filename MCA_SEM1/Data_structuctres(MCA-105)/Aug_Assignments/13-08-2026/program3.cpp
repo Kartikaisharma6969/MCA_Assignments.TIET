@@ -48,7 +48,7 @@ int main(){
     cout<<"Using binary search: "<<endl;
     cout<<BinarySearch(arr,size);
 
-
+    
 
 
 

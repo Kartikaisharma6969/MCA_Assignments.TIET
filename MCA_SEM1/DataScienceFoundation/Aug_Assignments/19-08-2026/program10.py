@@ -1,28 +1,11 @@
 """
-9) Grade Calculator Using if-elif Develop a Python program that accepts a student's marks and
- assigns a grade according to the following criteria:
-   Marks 90-100 Grade 80-89 A B 70-79 60-69 C D 50-59 E Below 50 F The program should: • Accept marks from the user.  
-• Validate that marks are within the range 0-100. 
- • Use an if-elif-else structure.  • Display the corresponding grade.  
+10) Multiplication Table Write a Python program that accepts an integer from the user and prints its multiplication 
+table from 1 to 10. For example, 
+for input 5: 5 × 1 = 5 5 × 2 = 10 ... 5 × 10 = 50 The program must use a loop to generate the table.
 """
-marks = int(input("Enter the marks: "))
+num = int(input("Enter the number : "))
+print("Table for the entred number is below: ")
 
+for i in range(1,10+1):
+    print(num," * ",i,"=",num*i)
 
-if marks>=90 and marks<=100:
-    print("A")
-
-elif marks>=80 and marks<=89:
-    print("B")
-elif marks>=70 and marks<=79:
-    print("C")
-
-elif marks>=60 and marks<=69:
-    print("D")
-
-elif marks>=50 and marks<=59:
-    print("E")
-elif marks>0 and marks<50:
-    print("Fail")
-
-else:
-    print("Invalid input entred for marks..")

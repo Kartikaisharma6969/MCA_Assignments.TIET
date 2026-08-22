@@ -14,6 +14,8 @@ class Box{
 
     public:
     Box(){
+        cout<<"constructor 1 is called " <<endl;
+
         cout<<"Enter the length of the box: ";
         int c_length;
         cin>>c_length;
@@ -30,6 +32,8 @@ class Box{
 
     }
     Box(int c_length , int c_height, int c_width){
+        cout<<"constructor 2 callled"<<endl;
+
                 this->length = c_length;
                         this->width = c_width;
                                 this->height = c_height;
@@ -49,7 +53,12 @@ class Box{
 
 };
 int main(){
-    Box A;
+    Box A(2,4,5);
+    A.Displaydetails();
+    Box B;
+    B.Displaydetails();
+    
+    
     
  
  

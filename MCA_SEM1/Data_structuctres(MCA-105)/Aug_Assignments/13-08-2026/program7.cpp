@@ -4,24 +4,51 @@ said to be an inversion if these numbers are out of order, i.e., i < j but A[i]>
  Write a program to count the number of inversions in an array. 
 */
 #include<iostream>
+#include<vector>
+
 using namespace std;
+int Inversioncounts(vector<int> vec){
+    int count = 0;
+    for(int i = 0 ;  i <vec.size() ; i++){
+        for(int  j = i+1; j<vec.size() ;j++){
+            if(vec[i]>vec[j]){
+                count = count + 1;
+            }
+        }
+    }
+    return count;
+
+}
 int main(){
-    int A[5];
-    int B[5];
+    vector<int>vec;
+
+    cout<<"Enter the size of vector: ";
+    int size;
+    cin>>size;
 
 
-    cout<<"Enter the elements for the array 1: ";
-    int size = sizeof(A)/sizeof(int);
+    for(int i = 0 ; i <size; i++){
+        cout<<"Enter the elemnt for index no "<<  i + 1<<" :";
+        int value;
+        cin>>value;
+
+        vec.push_back(value);
+
+    }
+    cout<<"Vector elements are inputted.."<<endl;
+    cout<<"You entred: \n";
 
     for(int i = 0 ; i<size; i++){
-        cout<<"Enter the element no "<<i+1<<" :";
-        cin>>A[i];
+        cout<<vec[i]<<" ";
     }
-    cout<<endl;
-    for(int j = 0 ; j<size ; j++ ){
-        
+    cout<<"\n";
+
+    int inversions = Inversioncounts(vec);
+    if(inversions!=0){
+         cout<<"There are total "<<inversions<<" in vector";
+
+    }else{
+        cout<<"No inversioons found..";
     }
- 
- 
- 
+   
 }

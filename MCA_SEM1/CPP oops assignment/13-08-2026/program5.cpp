@@ -19,7 +19,7 @@ class Student{
     string name;
     int rollno;
     string Hostel;
-    string Degree;+
+    string Degree;
     float currentCgpa;
 
     //constructor//

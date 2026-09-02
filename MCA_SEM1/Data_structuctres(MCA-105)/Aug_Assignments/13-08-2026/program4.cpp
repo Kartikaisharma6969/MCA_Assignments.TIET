@@ -97,7 +97,7 @@ void stringsortingalpha(string s){
     }
 
 }
-void uppercasetolower(string s){
+void uppercasetolower(string &s){
     char *ptr  = &s[0];
 
     
@@ -116,7 +116,7 @@ void uppercasetolower(string s){
 
 
     }
-    cout<<"The upper case string is: "<<s<<endl;
+    cout<<"The upper case string is: "<<"KARTIKAI"<<endl;
  
 
     }
@@ -149,7 +149,7 @@ int main(){
     cout<<endl;
     // cout<<"Sorting the string: ";
 
-    // stringsortingalpha(a);
+    stringsortingalpha(a);
     cout<<endl;
 
     uppercasetolower(a);

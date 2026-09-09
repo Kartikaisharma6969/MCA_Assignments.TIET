@@ -19,6 +19,7 @@ class Stack{
     }
 
     void push(int val){
+        
         if(top<size-1){
             top++;
             arr[top] = val;
@@ -61,9 +62,19 @@ class Stack{
             return false;
         }
 
+        void exiting(){
+            exit(0);
+        }
+
 
 };
 int main(){
+     int choice;
+    int size;
+    std::cout<<"Enter the size of stack: ";
+        std::cin>>size;
+        Stack s(size);
+    do{
     std::cout<<"Enter the choice fromt the following: \n";
     std::cout<<"1.Push element...\n";
         std::cout<<"2.Pop element...\n";
@@ -71,23 +82,26 @@ int main(){
                         std::cout<<"4.is empty()??...\n";
                                 std::cout<<"5.Display...\n";
                                 std::cout<<"6. isfull??..\n";
+                                std::cout<<"7. Exit..\n";
 
 
         std::cout<<"Enter the choice number: ";
-        int choice;
         std::cin>>choice;
-        std::cout<<"Enter the size of the stack: ";
-        int size;
-        std::cin>>size;
-        Stack s(size);
+       
+
+
 
         switch (choice)
         {
         case 1:
-        std::cout<<"Enter the element to push: ";
+        for(int i = 0 ; i<size; i++){
+        std::cout<<"Enter the element no "<<i+1<<" to push: ";
         int elem;
         std::cin>>elem;
         s.push(elem);
+
+        }
+
             
             break;
 
@@ -108,11 +122,32 @@ int main(){
             std::cout<<"The stack is full \n";
         }
         break;
+
+        case 5:
+        std::cout<<"Displaying the entered elements..\n";
+        s.display();
+        break;
+
+        case 6:
+        if(s.isFull()){
+            std::cout<<"The stack is already full..\n";
+            
+        }else{
+            std::cout<<"the stack have space..\n";
+        }
+        break;
+
+        case 7:
+        s.exiting();
+        break;
         
         default:
             break;
         }
+    }while(choice!=7);
 
+
+    
 
 
 

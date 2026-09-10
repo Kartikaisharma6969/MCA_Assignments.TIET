@@ -22,7 +22,7 @@ void display(Student s) {
 }
 
 int main() {
-    Student s1("Kartik", 85);
+    Student s1("Kartikai", 85);
 
     display(s1);
 

@@ -36,8 +36,8 @@ class Complex{
 
 };
 int main(){
-    Complex A(2,3);
-    Complex B(3,4);
+    Complex A(3,4);
+    Complex B(2,5);
     A.Print();
     B.Print();
 

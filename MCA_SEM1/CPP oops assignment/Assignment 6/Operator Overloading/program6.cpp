@@ -19,7 +19,10 @@ public:
 
     // Overload == operator
     bool operator==(const Student& B) const {
+
         return this->CGPA == B.CGPA;
+
+
     }
 
     // Overload > operator

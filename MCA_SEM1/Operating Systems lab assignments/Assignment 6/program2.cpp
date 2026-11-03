@@ -76,6 +76,7 @@ void SJFapplication(std::vector<Process>&vec){
             }
 
         }
+        //simple
 
         //checking if any process is available//
 

@@ -24,6 +24,44 @@ class Process{
     }
 };
 
+void SJFpreemptiveApplication(std::vector<Process>vec){
+    int completed = 0 ;
+    int time = 0;
+
+    while(completed<vec.size()){
+        int miniBT = 99999999;
+        int index = -1;
+
+        for(int i = 0 ; i<vec.size(); i++){  //traveresiing the vector to check for the processes which are arrived acc to the current time
+            if(vec[i].AT <= time && vec[i].CT == -1){
+                if(vec[i].BT<miniBT){
+                    miniBT = vec[i].BT;
+                    index = i;
+                }
+            }
+        }
+
+        if(index == -1){
+            time++;
+        }
+
+        //Noe executing the processes..////
+        else{
+            time = time + vec[index].BT;
+
+            //finding the completion time//
+            vec[index].CT = time;
+            //finding the tat//
+            vec[index].TAT = vec[index].CT - vec[index].AT;
+            //finding the waiting time//
+            vec[index].WT = vec[index].TAT - vec[index].WT;
+
+        }
+
+    }
+
+}
+
 int main(){
 
     std::vector<Process> v;

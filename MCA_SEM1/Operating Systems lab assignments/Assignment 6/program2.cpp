@@ -83,7 +83,7 @@ void SJFapplication(std::vector<Process>&vec){
             time++;
         }
         else{
-
+              
             //executing the selected process//
 
             time = time + vec[index].Bt;
